@@ -41,7 +41,7 @@ export const HardwareExplorer: React.FC<HardwareExplorerProps> = ({ lang }) => {
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900">
               <img
-                src="/src/assets/images/hardware_assembly_1790420032776.jpg"
+                src="/images/hardware_assembly.jpg"
                 alt="Hardware components of AlertInUA"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 referrerPolicy="no-referrer"

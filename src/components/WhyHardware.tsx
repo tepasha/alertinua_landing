@@ -191,7 +191,7 @@ export const WhyHardware: React.FC<WhyHardwareProps> = ({ lang }) => {
 
           <div className="lg:col-span-6 h-full min-h-[320px] relative">
             <img
-              src="/src/assets/images/device_nightstand_1790420019701.jpg"
+              src="/images/device_nightstand.jpg"
               alt="AlertInUA on bedroom nightstand in dim lighting"
               className="w-full h-full object-cover max-h-[420px]"
               referrerPolicy="no-referrer"

@@ -85,7 +85,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onScrollToSimulator, onScrollT
         <div className="mt-14 relative max-w-5xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/80 bg-slate-900 group">
             <img
-              src="/src/assets/images/hero_device_desk_1790420007845.jpg"
+              src="/images/hero_device_desk.jpg"
               alt="AlertInUA desktop hardware device on a workstation desk"
               className="w-full h-auto object-cover aspect-[16/9] transition-transform duration-700 group-hover:scale-[1.01]"
               referrerPolicy="no-referrer"
