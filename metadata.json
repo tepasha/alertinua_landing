@@ -1,0 +1,6 @@
+{
+  "name": "AlertInUA – Настільний Монітор Тривог ESP32",
+  "description": "Автономний настільний індикатор повітряних тривог України на базі LilyGO T-Display ESP32 та FreeRTOS. Відкритий код, адаптивна яскравість та миттєве сповіщення.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

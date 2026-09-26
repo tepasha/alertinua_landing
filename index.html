@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlertInUA – Автономний настільний монітор тривог ESP32</title>
+    <meta name="description" content="Автономний настільний індикатор повітряних тривог України на базі LilyGO T-Display ESP32 та FreeRTOS. Працює 24/7, адаптивна яскравість та відкритий код." />
+    <meta property="og:title" content="AlertInUA – Автономний настільний монітор тривог ESP32" />
+    <meta property="og:description" content="Автономний настільний індикатор повітряних тривог України на базі LilyGO T-Display ESP32 та FreeRTOS. Працює 24/7, адаптивна яскравість та відкритий код." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AlertInUA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AlertInUA – Автономний настільний монітор тривог ESP32" />
+    <meta name="twitter:description" content="Автономний настільний індикатор повітряних тривог України на базі LilyGO T-Display ESP32 та FreeRTOS." />
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "AlertInUA",
+      "programmingLanguage": "C",
+      "codeRepository": "https://github.com/tepasha/alertinua",
+      "description": "ESP32 firmware for LilyGO T-Display showing real-time Ukraine air raid alerts map using FreeRTOS and alerts.in.ua IoT API",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@type": "Person",
+        "name": "tepasha"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#07090E] text-slate-100 antialiased selection:bg-rose-500/30 selection:text-rose-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
