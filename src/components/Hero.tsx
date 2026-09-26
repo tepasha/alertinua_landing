@@ -5,10 +5,9 @@ import { Language } from '../types';
 interface HeroProps {
   lang: Language;
   onScrollToSimulator: () => void;
-  onScrollToOrder: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ lang, onScrollToSimulator, onScrollToOrder }) => {
+export const Hero: React.FC<HeroProps> = ({ lang, onScrollToSimulator }) => {
   return (
     <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
       {/* Background glow and subtle grid */}
@@ -70,14 +69,6 @@ export const Hero: React.FC<HeroProps> = ({ lang, onScrollToSimulator, onScrollT
               <Github className="w-4 h-4" />
               <span>{lang === 'ua' ? 'Зібрати самостійно (GitHub)' : 'Build from GitHub (DIY)'}</span>
             </a>
-
-            <button
-              onClick={onScrollToOrder}
-              className="w-full sm:w-auto px-5 py-3 text-sm font-medium text-amber-300 hover:text-amber-200 bg-amber-950/30 hover:bg-amber-950/50 border border-amber-800/40 rounded-xl transition-all flex items-center justify-center gap-2"
-            >
-              <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>{lang === 'ua' ? 'Готовий девайс / KIT' : 'Get Pre-built Kit'}</span>
-            </button>
           </div>
         </div>
 

@@ -6,7 +6,6 @@ import { WhyHardware } from './components/WhyHardware';
 import { HardwareExplorer } from './components/HardwareExplorer';
 import { ArchitectureSection } from './components/ArchitectureSection';
 import { QuickStart } from './components/QuickStart';
-import { PreorderForm } from './components/PreorderForm';
 import { Footer } from './components/Footer';
 import { Language } from './types';
 
@@ -22,24 +21,17 @@ export default function App() {
     el?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToOrder = () => {
-    const el = document.getElementById('preorder');
-    el?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen bg-[#07090E] text-slate-100 flex flex-col font-sans selection:bg-rose-500/30 selection:text-rose-200">
       <Header
         lang={lang}
         onToggleLang={toggleLanguage}
-        onOpenOrder={scrollToOrder}
       />
 
       <main className="flex-1">
         <Hero
           lang={lang}
           onScrollToSimulator={scrollToSimulator}
-          onScrollToOrder={scrollToOrder}
         />
 
         <DeviceSimulator lang={lang} />
@@ -51,8 +43,6 @@ export default function App() {
         <ArchitectureSection lang={lang} />
 
         <QuickStart lang={lang} />
-
-        <PreorderForm lang={lang} />
       </main>
 
       <Footer lang={lang} />

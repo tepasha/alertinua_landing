@@ -5,10 +5,9 @@ import { Language } from '../types';
 interface HeaderProps {
   lang: Language;
   onToggleLang: () => void;
-  onOpenOrder: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ lang, onToggleLang, onOpenOrder }) => {
+export const Header: React.FC<HeaderProps> = ({ lang, onToggleLang }) => {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#07090E]/85 border-b border-white/[0.07]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
@@ -44,30 +43,22 @@ export const Header: React.FC<HeaderProps> = ({ lang, onToggleLang, onOpenOrder 
           {/* Language Switcher */}
           <button
             onClick={onToggleLang}
-            className="px-2.5 py-1 text-xs font-mono font-medium text-slate-300 hover:text-white bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.1] rounded transition-colors"
+            className="px-2.5 py-1.5 text-xs font-mono font-medium text-slate-300 hover:text-white bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.1] rounded transition-colors"
             title={lang === 'ua' ? 'Switch to English' : 'Перемкнути на українську'}
           >
             {lang === 'ua' ? 'EN' : 'UA'}
           </button>
 
-          {/* GitHub Repo Link */}
+          {/* GitHub Repo Link (Primary Action) */}
           <a
             href="https://github.com/tepasha/alertinua"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-300 hover:text-white bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] rounded-lg transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg shadow-sm shadow-rose-950/50 transition-colors whitespace-nowrap active:scale-[0.98]"
           >
-            <Github className="w-3.5 h-3.5 text-slate-400" />
+            <Github className="w-3.5 h-3.5" />
             <span>GitHub</span>
           </a>
-
-          {/* Primary CTA */}
-          <button
-            onClick={onOpenOrder}
-            className="px-3.5 py-1.5 text-xs font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg shadow-sm shadow-rose-950/50 transition-colors whitespace-nowrap active:scale-[0.98]"
-          >
-            {lang === 'ua' ? 'Замовити KIT' : 'Get a Kit'}
-          </button>
         </div>
       </div>
     </header>
