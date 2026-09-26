@@ -66,7 +66,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, onToggleLang, onOpenOrder 
             onClick={onOpenOrder}
             className="px-3.5 py-1.5 text-xs font-semibold text-white bg-rose-600 hover:bg-rose-500 rounded-lg shadow-sm shadow-rose-950/50 transition-colors whitespace-nowrap active:scale-[0.98]"
           >
-            {lang === 'ua' ? 'Замовити Кит' : 'Get a Kit'}
+            {lang === 'ua' ? 'Замовити KIT' : 'Get a Kit'}
           </button>
         </div>
       </div>

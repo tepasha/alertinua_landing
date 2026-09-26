@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onScrollToSimulator, onScrollT
               className="w-full sm:w-auto px-5 py-3 text-sm font-medium text-amber-300 hover:text-amber-200 bg-amber-950/30 hover:bg-amber-950/50 border border-amber-800/40 rounded-xl transition-all flex items-center justify-center gap-2"
             >
               <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>{lang === 'ua' ? 'Готовий девайс / Кит' : 'Get Pre-built Kit'}</span>
+              <span>{lang === 'ua' ? 'Готовий девайс / KIT' : 'Get Pre-built Kit'}</span>
             </button>
           </div>
         </div>
